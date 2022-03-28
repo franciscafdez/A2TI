@@ -4,7 +4,7 @@ const res = require('express/lib/response')
 const app = express()
 
 
-const port = 3000
+const port = process.env.PORT
 
 app.get('/info', (req,res)=>{
     res.status(200).send('Hola')
