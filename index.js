@@ -11,7 +11,7 @@ app.get('/', (req,res)=>{
 })
 
 app.get('/info', (req,res)=>{
-    res.status(200).send({"url": req.protocol + '://' + req.get('host') +req.url})
+    res.status(200).send({"url": req.protocol + '://' + req.get('host')})
 })
 
 app.get('/status', (req,res)=>{
